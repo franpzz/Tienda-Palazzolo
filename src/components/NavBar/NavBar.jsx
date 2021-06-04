@@ -1,5 +1,6 @@
 import "./NavBar.css"
 import logo from "../../assets/images/wolfLogo.png"
+import CartWidget from "../CartWidget/CartWidget"
 
 function NavBar () {
     return (
@@ -11,6 +12,7 @@ function NavBar () {
                 <a href="#" className="menuItem">Nosotros</a>
                 <a href="#" className="menuItem">Productos</a>
                 <a href="#" className="menuItem">Contacto</a>
+                <CartWidget />
             </div>
         </nav>
     );
