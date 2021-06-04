@@ -37,4 +37,5 @@
 
 .menuItem:hover {
     text-decoration: underline;
+    color: white;
 }
