@@ -1,0 +1,18 @@
+.contenedorBotones {
+    width: 100%;
+}
+
+.botones {
+    width: 50px;
+}
+
+.productos {
+    width: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.botonCompra {
+    width: 50%;
+    height: 50px;
+}
