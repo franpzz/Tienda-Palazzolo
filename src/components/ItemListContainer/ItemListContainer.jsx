@@ -1,6 +1,7 @@
 import React from 'react'
 import Contador from '../Contador/Contador'
 import "./ItemListContainer.css"
+import ItemList from '../ItemList/ItemList'
 
 const ItemListContainer = ({productos}) => {
 
@@ -17,7 +18,8 @@ const ItemListContainer = ({productos}) => {
             <h1 className="tituloProvisional">
                 {productos}
             </h1>
-            <Contador initial={1} stock={15} funcion={onAdd} funcionComprar={onCheckout} />
+            <Contador initial={1} stock={15} onAdd={onAdd} funcionComprar={onCheckout} />
+            <ItemList />
         </div>
     )
 }

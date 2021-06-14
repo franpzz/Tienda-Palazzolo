@@ -1,12 +1,12 @@
 import React, { useState, Fragment } from 'react'
 import "./Contador.css"
 
-const Contador = ({initial, stock, funcion, funcionComprar}) => {
+const Contador = ({initial, stock, onAdd, funcionComprar}) => {
 
     const [producto, setProducto] = useState(initial);
     const Agregar = () => {
         producto < stock && setProducto(producto + 1);
-        producto < stock && funcion();
+        producto < stock && onAdd();
     } 
     const Quitar = () => {
         producto > 0 && setProducto(producto - 1);
